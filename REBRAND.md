@@ -35,8 +35,9 @@ Search the project for `YOUR_` to find every placeholder.
 | Gemini (AI area insights) | `lib/func/helper.php` (`$apiKey`) | New key from Google AI Studio |
 | Resend | `lib/include/mail_config.php` on the server | New API key |
 
-## 4. Branding assets (still show the Zegicon logo)
-- Replace `assets/images/logo.png`, `assets/images/logo-icon.png` and `assets/icon/icon.png`, then run `dart run flutter_launcher_icons` and `dart run flutter_native_splash:create`.
+## 4. Branding assets
+- **Done:** the Aboostoplus logo is in place: `assets/images/logo.png` (full logo, splash + login), `assets/images/logo-icon.png` (infinity mark), `assets/icon/icon.png` (launcher icon on white) and `assets/icon/foreground.png` (Android adaptive icon). Launcher icons, splash screens, web icons, the Windows icon and the website favicon have been regenerated.
+- If you change the logo later, run `dart run flutter_launcher_icons` and `dart run flutter_native_splash:create`. These fail inside this project because `pubspec.yaml` pins `image: ^3.0.8` under `dependency_overrides`. Run them in a scratch Flutter project that has copies of `android/`, `ios/`, `web/` and `windows/`, then copy the generated images back. Don't copy back `web/index.html`, which has a custom splash.
 - Website screenshots in `website/assets/img/screen-*.jpg` are Zegicon app screenshots. Retake them from the Aboostoplus app.
 - Add a social share image as `website/assets/img/og-image.png` (1200×628) and put back the `og:image` tag in `website/index.html`.
 - Colours (plum and gold) are unchanged; edit `lib/theme/app_palette.dart` and `lib/theme/app_theme.dart` to restyle.
