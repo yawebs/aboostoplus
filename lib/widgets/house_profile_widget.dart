@@ -18,7 +18,7 @@ class HouseWidgetProfile extends StatelessWidget {
   const HouseWidgetProfile({Key? key, required this.property})
       : super(key: key);
 
-  static const _gold = Color(0xFFE8A93B);
+  static const _gold = Color(0xFFF7821B);
   static const _cardWidth = 210.0;
   static const _cardHeight = 260.0;
 
@@ -141,7 +141,7 @@ class HouseWidgetProfile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [Color(0xFFF5C76A), _gold],
+          colors: [Color(0xFFFDB813), _gold],
         ),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [

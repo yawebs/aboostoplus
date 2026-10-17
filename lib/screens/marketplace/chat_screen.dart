@@ -581,7 +581,7 @@ class _ChatScreenState extends State<ChatScreen> {
                             VerifiedBadge(
                                 userId: widget.receiverId,
                                 size: 14,
-                                color: const Color(0xFFF5C76A),
+                                color: const Color(0xFFFDB813),
                                 withLabel: true,
                                 gap: 6),
                           ],

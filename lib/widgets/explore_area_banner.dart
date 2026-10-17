@@ -28,7 +28,7 @@ class ExploreAreaBanner extends StatelessWidget {
             ),
             child: Stack(
               children: [
-                // Soft gold glow in the corner
+                // Soft orange glow in the corner
                 Positioned(
                   right: -40,
                   top: -40,
@@ -38,8 +38,8 @@ class ExploreAreaBanner extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       gradient: RadialGradient(colors: [
-                        const Color(0xFFF5C76A).withValues(alpha: 0.35),
-                        const Color(0xFFF5C76A).withValues(alpha: 0),
+                        const Color(0xFFFDB813).withValues(alpha: 0.35),
+                        const Color(0xFFFDB813).withValues(alpha: 0),
                       ]),
                     ),
                   ),
@@ -53,13 +53,13 @@ class ExploreAreaBanner extends StatelessWidget {
                         height: 52,
                         decoration: BoxDecoration(
                           gradient: const LinearGradient(colors: [
-                            Color(0xFFF5C76A),
-                            Color(0xFFE8A93B),
+                            Color(0xFFFDB813),
+                            Color(0xFFF7821B),
                           ]),
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: const Icon(Icons.travel_explore_rounded,
-                            color: Color(0xFF3F224F), size: 28),
+                            color: Color(0xFF161616), size: 28),
                       ),
                       const SizedBox(width: 14),
                       Expanded(
@@ -85,14 +85,14 @@ class ExploreAreaBanner extends StatelessWidget {
                                   padding: const EdgeInsets.symmetric(
                                       horizontal: 6, vertical: 2),
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFFF5C76A),
+                                    color: const Color(0xFFFDB813),
                                     borderRadius: BorderRadius.circular(6),
                                   ),
                                   child: const Text('AI',
                                       style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.w900,
-                                          color: Color(0xFF3F224F))),
+                                          color: Color(0xFF161616))),
                                 ),
                               ],
                             ),

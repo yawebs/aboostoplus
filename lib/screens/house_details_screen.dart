@@ -625,8 +625,8 @@ class _HouseDetailsScreenState extends State<HouseDetailsScreen> {
     final legal = p.legalFee;
     final total = rent + agentAmount + caution + legal;
 
-    const rentColor = Color(0xFF6A3D7A);
-    const agentColor = Color(0xFFE8A93B);
+    const rentColor = Color(0xFFC45A06);
+    const agentColor = Color(0xFFF7821B);
     const cautionColor = Color(0xFF2E9E8F);
     const legalColor = Color(0xFF4A78C2);
 

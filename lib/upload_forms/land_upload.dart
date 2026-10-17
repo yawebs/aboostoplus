@@ -678,7 +678,7 @@ class _LandUploadScreenState extends State<LandUploadScreen> {
             ? const LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: [Color(0xFF6A3D7A), Color(0xFF3F224F)],
+                colors: [Color(0xFFC45A06), Color(0xFF161616)],
               )
             : null,
         color: ready ? null : p.surface,
@@ -695,7 +695,7 @@ class _LandUploadScreenState extends State<LandUploadScreen> {
                     fontSize: 10.5,
                     letterSpacing: 1.1,
                     fontWeight: FontWeight.w800,
-                    color: ready ? const Color(0xFFE8A93B) : p.textGrey,
+                    color: ready ? const Color(0xFFF7821B) : p.textGrey,
                   ),
                 ),
                 const SizedBox(height: 4),
@@ -825,14 +825,14 @@ class _LandUploadScreenState extends State<LandUploadScreen> {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 6, vertical: 2),
                         decoration: BoxDecoration(
-                          color: const Color(0xFFE8A93B),
+                          color: const Color(0xFFF7821B),
                           borderRadius: BorderRadius.circular(6),
                         ),
                         child: const Text('Cover',
                             style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w800,
-                                color: Color(0xFF241428))),
+                                color: Color(0xFF1a1a1a))),
                       ),
                     ),
                   Positioned(
@@ -913,7 +913,7 @@ class _LandUploadScreenState extends State<LandUploadScreen> {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Color(0xFF6A3D7A), Color(0xFF3F224F), Color(0xFF1B1020)],
+            colors: [Color(0xFFC45A06), Color(0xFF161616), Color(0xFF0A0A0A)],
             stops: [0.0, 0.55, 1.0],
           ),
         ),
@@ -929,7 +929,7 @@ class _LandUploadScreenState extends State<LandUploadScreen> {
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
-                    colors: [Color(0x4DE8A93B), Colors.transparent],
+                    colors: [Color(0x4DF7821B), Colors.transparent],
                   ),
                 ),
               ),
@@ -965,7 +965,7 @@ class _LandUploadScreenState extends State<LandUploadScreen> {
                       Text(
                         'LAND SALE',
                         style: TextStyle(
-                          color: Color(0xFFE8A93B),
+                          color: Color(0xFFF7821B),
                           fontSize: 11,
                           fontWeight: FontWeight.w700,
                           letterSpacing: 1.3,
@@ -1007,18 +1007,18 @@ class _LandUploadScreenState extends State<LandUploadScreen> {
         width: 42,
         height: 42,
         decoration: BoxDecoration(
-          color: const Color(0xFFE8A93B),
+          color: const Color(0xFFF7821B),
           shape: BoxShape.circle,
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFFE8A93B).withValues(alpha: 0.4),
+              color: const Color(0xFFF7821B).withValues(alpha: 0.4),
               blurRadius: 14,
               offset: const Offset(0, 4),
             ),
           ],
         ),
         child: const Icon(Icons.terrain_rounded,
-            color: Color(0xFF241428), size: 22),
+            color: Color(0xFF1a1a1a), size: 22),
       ),
     );
   }

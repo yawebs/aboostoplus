@@ -13,8 +13,8 @@ class AppColors {
   static const primaryLight = Color(0xFFFFF0E8);
   // Warm gold accent, pulled from the existing gradientColors4 palette in
   // constant.dart so the new web accent still feels drawn from the brand.
-  static const secondary = Color(0xFFE8A93B);
-  static const secondaryLight = Color(0xFFFCF0DA);
+  static const secondary = Color(0xFFF7821B);
+  static const secondaryLight = Color(0xFFFFF1E3);
   static const background = Color(0xFFFFFFFF);
   static const surface = Color(0xFFF5F6FA);
   static const surfaceAlt = Color(0xFFEFEFF6);
@@ -25,12 +25,12 @@ class AppColors {
   static const success = Color(0xFF4CAF50);
   static const error = Color(0xFFE53935);
   static const cardBg = Color(0xFFF7F8FC);
-  static const cardShadow = Color(0x1F3F224F);
+  static const cardShadow = Color(0x1F161616);
 
   static const heroGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [Color(0xFF3F224F), Color(0xFF6A3D7A)],
+    colors: [Color(0xFF161616), Color(0xFFC45A06)],
   );
 }
 

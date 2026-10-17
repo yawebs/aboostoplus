@@ -63,7 +63,7 @@ class AppPalette extends ThemeExtension<AppPalette> {
   final Color border;
   final Color cardShadow;
 
-  // Mirrors the legacy constant.dart globals: `white` (a lavender page/card
+  // Mirrors the legacy constant.dart globals: `white` (a warm off-white page/card
   // surface), `lightGrey`, and `black` / Colors.black87 / Colors.black54
   // when used as text or icon colors.
   final Color paper;
@@ -72,8 +72,8 @@ class AppPalette extends ThemeExtension<AppPalette> {
   final Color inkSoft;
   final Color inkMuted;
 
-  // The brand purple when it's used as a text/icon/border color on a
-  // surface (it needs to be lighter on dark surfaces), and when it's used
+  // The brand colour when it's used as a text/icon/border color on a surface
+  // (black on light surfaces, logo yellow on dark ones), and when it's used
   // as a solid fill behind white content.
   final Color accent;
   final Color primaryFill;
@@ -95,47 +95,47 @@ class AppPalette extends ThemeExtension<AppPalette> {
     page: Color(0xFFF7F7F9),
     tile: Color(0xFFF7F7F9),
     chip: Color(0xFFF1F1F3),
-    raised: Color(0xE6E6E6FA),
+    raised: Color(0xE6FAF6F1),
     raisedBorder: Color(0x00000000),
     raisedElevation: 1,
     textDark: Color(0xFF0D0D0D),
     textGrey: Color(0xFF8A8A8A),
     textLight: Color(0xFFBBBBBB),
     border: Color(0xFFE8E8E8),
-    cardShadow: Color(0x1F3F224F),
-    paper: Color(0xFFE6E6FA),
+    cardShadow: Color(0x1F161616),
+    paper: Color(0xFFFAF6F1),
     paperAlt: Color(0xFFEEF3F3),
     ink: Color(0xFF000000),
     inkSoft: Color(0xDD000000),
     inkMuted: Color(0x8A000000),
-    accent: Color(0xFF3F224F),
-    primaryFill: Color(0xFF3F224F),
+    accent: Color(0xFF161616),
+    primaryFill: Color(0xFF161616),
   );
 
   static const dark = AppPalette(
-    background: Color(0xFF15111B),
-    surface: Color(0xFF1D1824),
-    surfaceAlt: Color(0xFF261F2F),
-    cardBg: Color(0xFF211A29),
-    card: Color(0xFF211A29),
-    page: Color(0xFF15111B),
-    tile: Color(0xFF2A2333),
-    chip: Color(0xFF322A3D),
-    raised: Color(0xFF2B2336),
-    raisedBorder: Color(0x33CBA6DE),
+    background: Color(0xFF121212),
+    surface: Color(0xFF1C1C1C),
+    surfaceAlt: Color(0xFF262626),
+    cardBg: Color(0xFF202020),
+    card: Color(0xFF202020),
+    page: Color(0xFF121212),
+    tile: Color(0xFF2A2A2A),
+    chip: Color(0xFF333333),
+    raised: Color(0xFF2B2B2B),
+    raisedBorder: Color(0x33FDB813),
     raisedElevation: 10,
-    textDark: Color(0xFFF2EFF5),
-    textGrey: Color(0xFFA79DB2),
-    textLight: Color(0xFF6E647A),
-    border: Color(0xFF332B3F),
+    textDark: Color(0xFFF5F3F0),
+    textGrey: Color(0xFFA8A29A),
+    textLight: Color(0xFF6E6963),
+    border: Color(0xFF333333),
     cardShadow: Color(0x66000000),
-    paper: Color(0xFF1D1824),
-    paperAlt: Color(0xFF261F2F),
-    ink: Color(0xFFF2EFF5),
-    inkSoft: Color(0xE6F2EFF5),
-    inkMuted: Color(0x99F2EFF5),
-    accent: Color(0xFFCBA6DE),
-    primaryFill: Color(0xFF6A3D7A),
+    paper: Color(0xFF1C1C1C),
+    paperAlt: Color(0xFF262626),
+    ink: Color(0xFFF5F3F0),
+    inkSoft: Color(0xE6F5F3F0),
+    inkMuted: Color(0x99F5F3F0),
+    accent: Color(0xFFFDB813),
+    primaryFill: Color(0xFFC45A06),
   );
 
   @override

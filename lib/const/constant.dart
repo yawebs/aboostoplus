@@ -23,7 +23,7 @@ import '../widgets/search_sheet.dart';
 import '../widgets/user_list_widget.dart';
 import '../widgets/view_photo_widget.dart';
 
-Color primaryColor = const Color.fromRGBO(63, 34, 79, 1);
+Color primaryColor = const Color.fromRGBO(22, 22, 22, 1);
 Color lightGrey4Form = Colors.grey.shade300.withOpacity(.5);
 const GoogleApiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
 imageRounte({name}) {
@@ -70,7 +70,7 @@ class AppTextStyles {
 String logoPath = 'logo.png';
 Color blackWithOp = black.withOpacity(.5);
 List<Color> gradientColors = [
-  Color.fromRGBO(218, 173, 73, 1),
+  Color.fromRGBO(253, 184, 19, 1),
   primaryColor,
   white,
   primaryColor,
@@ -157,7 +157,7 @@ Widget videoLoader({double size = 36}) {
     height: size,
     child: CircularProgressIndicator(
       strokeWidth: 2.4,
-      valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFFE8A93B)),
+      valueColor: const AlwaysStoppedAnimation<Color>(Color(0xFFF7821B)),
       backgroundColor: Colors.white.withOpacity(0.14),
     ),
   );
@@ -242,8 +242,8 @@ listLoader() {
   );
 }
 
-//primary color hex code #3f224f;
-Color white = HexColor('#E6E6FA');
+//primary color hex code #161616;
+Color white = HexColor('#FAF6F1');
 Color whiteOp = white.withOpacity(.9);
 Color black = Colors.black;
 Color grey300 = Colors.grey..shade200;

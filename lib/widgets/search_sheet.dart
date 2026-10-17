@@ -84,7 +84,7 @@ class _SearchSheetState extends State<SearchSheet> {
   // "Get alerts for this search": shown for any active search/filter, and
   // most useful when there are no results yet.
   Widget _alertCard(AppPalette palette, {required bool noResults}) {
-    const gold = Color(0xFFE8A93B);
+    const gold = Color(0xFFF7821B);
     return Container(
       margin: const EdgeInsets.fromLTRB(12, 12, 12, 0),
       padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
@@ -623,7 +623,7 @@ class _SearchSheetState extends State<SearchSheet> {
                       child: Container(
                         padding: const EdgeInsets.all(5),
                         decoration: BoxDecoration(
-                          color: const Color(0xFFE8A93B),
+                          color: const Color(0xFFF7821B),
                           shape: BoxShape.circle,
                           border: Border.all(color: palette.paper, width: 2),
                         ),

@@ -28,10 +28,10 @@ class FeatureTour extends StatefulWidget {
   State<FeatureTour> createState() => _FeatureTourState();
 }
 
-const _plum = Color(0xFF3F224F);
-const _plum2 = Color(0xFF6A3D7A);
-const _gold = Color(0xFFF5C76A);
-const _amber = Color(0xFFE8A93B);
+const _ink = Color(0xFF161616);
+const _ember = Color(0xFFC45A06);
+const _gold = Color(0xFFFDB813);
+const _amber = Color(0xFFF7821B);
 const _red = Color(0xFFE5484D);
 const _green = Color(0xFF2FBF71);
 const _blue = Color(0xFF3A86E0);
@@ -52,7 +52,7 @@ class _Slide {
 final List<_Slide> _slides = [
   _Slide('WELCOME TO ABOOSTOPLUS', 'Find your next home', 'without the wahala.',
       'Homes, land and service apartments, with everything you need to decide in one place.',
-      const Color(0xFF4A2560), const Color(0xFF1A0D22), (t, l) => _WelcomeArt(t: t, loop: l)),
+      const Color(0xFF2B2B2B), const Color(0xFF0D0D0D), (t, l) => _WelcomeArt(t: t, loop: l)),
   _Slide('EXPLORE ANY NEIGHBOURHOOD', 'Know the area', 'before you move.',
       'AI Area Insights scores power, flooding, security, roads and more for any neighbourhood in Nigeria.',
       const Color(0xFF173A63), const Color(0xFF0D1626), (t, l) => _AreaArt(t: t, loop: l)),
@@ -67,7 +67,7 @@ final List<_Slide> _slides = [
       const Color(0xFF17483F), const Color(0xFF0B1F1B), (t, l) => _ServicesArt(t: t, loop: l)),
   _Slide('SAVED HOMES & ALERTS', 'Never miss', 'the right home.',
       'Save homes you love and turn on search alerts. We’ll tell you the moment a match is listed.',
-      const Color(0xFF4A2560), const Color(0xFF1A0D22), (t, l) => _AlertsArt(t: t, loop: l)),
+      const Color(0xFF2B2B2B), const Color(0xFF0D0D0D), (t, l) => _AlertsArt(t: t, loop: l)),
 ];
 
 class _FeatureTourState extends State<FeatureTour> with TickerProviderStateMixin {
@@ -305,12 +305,12 @@ class _FeatureTourState extends State<FeatureTour> with TickerProviderStateMixin
                   child: _isLast
                       ? const FittedBox(
                           child: Row(mainAxisSize: MainAxisSize.min, children: [
-                            Text('Get started', style: TextStyle(color: _plum, fontWeight: FontWeight.w800, fontSize: 16)),
+                            Text('Get started', style: TextStyle(color: _ink, fontWeight: FontWeight.w800, fontSize: 16)),
                             SizedBox(width: 8),
-                            Icon(Icons.arrow_forward_rounded, color: _plum),
+                            Icon(Icons.arrow_forward_rounded, color: _ink),
                           ]),
                         )
-                      : const Icon(Icons.arrow_forward_rounded, color: _plum, size: 26),
+                      : const Icon(Icons.arrow_forward_rounded, color: _ink, size: 26),
                 ),
               ),
             ),
@@ -452,14 +452,14 @@ class _AreaArt extends StatelessWidget {
               Row(children: [
                 Container(
                   padding: const EdgeInsets.all(7),
-                  decoration: BoxDecoration(gradient: const LinearGradient(colors: [_plum2, _amber]), borderRadius: BorderRadius.circular(10)),
+                  decoration: BoxDecoration(gradient: const LinearGradient(colors: [_ember, _amber]), borderRadius: BorderRadius.circular(10)),
                   child: const Icon(Icons.auto_awesome, color: Colors.white, size: 16),
                 ),
                 const SizedBox(width: 10),
                 const Expanded(
                   child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                    Text('AI area insights', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15, color: Color(0xFF1D1424))),
-                    Text('Woji, Port Harcourt', style: TextStyle(fontSize: 12, color: Color(0xFF7D7088))),
+                    Text('AI area insights', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15, color: Color(0xFF161616))),
+                    Text('Woji, Port Harcourt', style: TextStyle(fontSize: 12, color: Color(0xFF7A746C))),
                   ]),
                 ),
               ]),
@@ -477,7 +477,7 @@ class _AreaArt extends StatelessWidget {
                       Expanded(
                         child: Container(
                           height: 9,
-                          decoration: BoxDecoration(color: const Color(0xFFF0E9F4), borderRadius: BorderRadius.circular(5)),
+                          decoration: BoxDecoration(color: const Color(0xFFFFF1E3), borderRadius: BorderRadius.circular(5)),
                           alignment: Alignment.centerLeft,
                           child: FractionallySizedBox(
                             widthFactor: score / 5 * k,
@@ -519,7 +519,7 @@ class _VerifiedArt extends StatelessWidget {
               Container(
                 width: 92,
                 height: 92,
-                decoration: const BoxDecoration(shape: BoxShape.circle, gradient: LinearGradient(colors: [_plum2, _plum])),
+                decoration: const BoxDecoration(shape: BoxShape.circle, gradient: LinearGradient(colors: [_ember, _ink])),
                 alignment: Alignment.center,
                 child: const Text('C', style: TextStyle(fontFamily: 'Fraunces', fontSize: 40, fontWeight: FontWeight.w700, color: Colors.white)),
               ),
@@ -543,7 +543,7 @@ class _VerifiedArt extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 14),
-          const Text('Chidi Okafor', style: TextStyle(fontFamily: 'Fraunces', fontSize: 22, fontWeight: FontWeight.w700, color: Color(0xFF1D1424))),
+          const Text('Chidi Okafor', style: TextStyle(fontFamily: 'Fraunces', fontSize: 22, fontWeight: FontWeight.w700, color: Color(0xFF161616))),
           Opacity(
             opacity: badge,
             child: const Text('Verified agent · Port Harcourt', style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: _blue)),
@@ -592,20 +592,20 @@ class _FeesArt extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const Text('Upfront cost breakdown', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15, color: Color(0xFF1D1424))),
+                const Text('Upfront cost breakdown', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15, color: Color(0xFF161616))),
                 const SizedBox(height: 10),
                 for (var n = 0; n < rows.length; n++)
                   _rise(_seg(t, .2 + n * .1, .45 + n * .1), Padding(
                     padding: const EdgeInsets.symmetric(vertical: 6),
                     child: Row(children: [
-                      Expanded(child: Text(rows[n][0], style: TextStyle(fontSize: 13.5, color: n == 1 ? _plum2 : const Color(0xFF5A4F62), fontWeight: n == 1 ? FontWeight.w800 : FontWeight.w500))),
-                      Text(rows[n][1], style: const TextStyle(fontSize: 13.5, fontWeight: FontWeight.w800, color: Color(0xFF1D1424))),
+                      Expanded(child: Text(rows[n][0], style: TextStyle(fontSize: 13.5, color: n == 1 ? _ember : const Color(0xFF5A4F62), fontWeight: n == 1 ? FontWeight.w800 : FontWeight.w500))),
+                      Text(rows[n][1], style: const TextStyle(fontSize: 13.5, fontWeight: FontWeight.w800, color: Color(0xFF161616))),
                     ]),
                   ), 10),
                 const Divider(height: 18),
                 _rise(_seg(t, .6, .8), const Row(children: [
-                  Expanded(child: Text('Estimated total', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: _plum))),
-                  Text('₦3,100,000', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: _plum)),
+                  Expanded(child: Text('Estimated total', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: _ink))),
+                  Text('₦3,100,000', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: _ink)),
                 ]), 8),
               ],
             ),
@@ -628,7 +628,7 @@ class _FeesArt extends StatelessWidget {
   Widget _bubble(String text, bool me) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         decoration: BoxDecoration(
-          color: me ? _plum : Colors.white,
+          color: me ? _ink : Colors.white,
           borderRadius: BorderRadius.only(
             topLeft: const Radius.circular(18),
             topRight: const Radius.circular(18),
@@ -637,7 +637,7 @@ class _FeesArt extends StatelessWidget {
           ),
           boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: .3), blurRadius: 16, offset: const Offset(0, 8))],
         ),
-        child: Text(text, style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.w700, color: me ? Colors.white : const Color(0xFF1D1424))),
+        child: Text(text, style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.w700, color: me ? Colors.white : const Color(0xFF161616))),
       );
 }
 
@@ -678,7 +678,7 @@ class _ServicesArt extends StatelessWidget {
                         Text(names[n],
                             textAlign: TextAlign.center,
                             maxLines: 2,
-                            style: const TextStyle(fontSize: 11.5, height: 1.15, fontWeight: FontWeight.w700, color: Color(0xFF1D1424))),
+                            style: const TextStyle(fontSize: 11.5, height: 1.15, fontWeight: FontWeight.w700, color: Color(0xFF161616))),
                       ]),
                     ));
                   }),
@@ -738,14 +738,14 @@ class _AlertsArt extends StatelessWidget {
                 child: Row(children: [
                   Container(
                     padding: const EdgeInsets.all(8),
-                    decoration: BoxDecoration(color: _plum, borderRadius: BorderRadius.circular(12)),
+                    decoration: BoxDecoration(color: _ink, borderRadius: BorderRadius.circular(12)),
                     child: const Icon(Icons.notifications_active_rounded, color: _gold, size: 22),
                   ),
                   const SizedBox(width: 12),
                   const Expanded(
                     child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                      Text('Aboostoplus · now', style: TextStyle(fontSize: 11.5, color: Color(0xFF7D7088))),
-                      Text('3 new homes match “2-bed in Woji”', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: Color(0xFF1D1424))),
+                      Text('Aboostoplus · now', style: TextStyle(fontSize: 11.5, color: Color(0xFF7A746C))),
+                      Text('3 new homes match “2-bed in Woji”', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: Color(0xFF161616))),
                     ]),
                   ),
                 ]),
@@ -788,8 +788,8 @@ class _AlertsArt extends StatelessWidget {
                         padding: const EdgeInsets.fromLTRB(10, 8, 10, 10),
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                           Text(n == 0 ? 'Duplex · Woji' : 'Flat · Rumuodara',
-                              style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w800, color: Color(0xFF1D1424))),
-                          Text(n == 0 ? '₦5M / yr' : '₦2.5M / yr', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: _plum2)),
+                              style: const TextStyle(fontSize: 12.5, fontWeight: FontWeight.w800, color: Color(0xFF161616))),
+                          Text(n == 0 ? '₦5M / yr' : '₦2.5M / yr', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: _ember)),
                         ]),
                       ),
                     ]),

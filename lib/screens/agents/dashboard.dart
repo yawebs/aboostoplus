@@ -277,7 +277,7 @@ class _DashboardState extends State<Dashboard> {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF6A3D7A), Color(0xFF3F224F), Color(0xFF1B1020)],
+          colors: [Color(0xFFC45A06), Color(0xFF161616), Color(0xFF0A0A0A)],
           stops: [0.0, 0.52, 1.0],
         ),
       ),
@@ -292,7 +292,7 @@ class _DashboardState extends State<Dashboard> {
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
-                  colors: [Color(0x4DE8A93B), Colors.transparent],
+                  colors: [Color(0x4DF7821B), Colors.transparent],
                 ),
               ),
             ),
@@ -376,7 +376,7 @@ class _DashboardState extends State<Dashboard> {
                       fontSize: 11,
                       fontWeight: FontWeight.w700,
                       letterSpacing: 1.4,
-                      color: Color(0xFFE8A93B)),
+                      color: Color(0xFFF7821B)),
                 ),
                 const SizedBox(height: 6),
                 Text(
@@ -459,7 +459,7 @@ class _DashboardState extends State<Dashboard> {
             child: _bentoCard(
               icon: Icons.hourglass_empty_rounded,
               iconBg: AppColors.secondary.withOpacity(0.14),
-              iconColor: const Color(0xFFC98E23),
+              iconColor: const Color(0xFFD96A0B),
               value: '₦${NumberFormat().format(income)}',
               label: 'Pending',
               bg: context.palette.card,
@@ -552,7 +552,7 @@ class _DashboardState extends State<Dashboard> {
           _actionCircle(
               Icons.account_balance_outlined,
               'Bank details',
-              const Color(0xFFC98E23),
+              const Color(0xFFD96A0B),
               AppColors.secondary.withOpacity(0.14),
               () => goTo(context, BankDetails(), false)),
           const SizedBox(width: 14),
@@ -885,7 +885,7 @@ class _SparklinePainter extends CustomPainter {
         size.height * 0.26,
       );
     final paint = Paint()
-      ..color = const Color(0xFFE8A93B).withOpacity(0.85)
+      ..color = const Color(0xFFF7821B).withOpacity(0.85)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2
       ..strokeCap = StrokeCap.round;

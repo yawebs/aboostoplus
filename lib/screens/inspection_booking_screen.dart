@@ -594,7 +594,7 @@ class _InspectionBookingScreenState extends State<InspectionBookingScreen> {
                 color: AppColors.secondary.withOpacity(0.14),
                 shape: BoxShape.circle),
             child: const Icon(Icons.forum_outlined,
-                color: Color(0xFFC98E23), size: 19),
+                color: Color(0xFFD96A0B), size: 19),
           ),
           const SizedBox(width: 12),
           Expanded(

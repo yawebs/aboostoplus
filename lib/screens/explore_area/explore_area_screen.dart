@@ -254,11 +254,11 @@ class _ExploreAreaScreenState extends State<ExploreAreaScreen> {
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
-                      colors: [Color(0xFFF5C76A), Color(0xFFE8A93B)]),
+                      colors: [Color(0xFFFDB813), Color(0xFFF7821B)]),
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: const Icon(Icons.auto_awesome_rounded,
-                    color: Color(0xFF3F224F), size: 22),
+                    color: Color(0xFF161616), size: 22),
               ),
               const SizedBox(width: 12),
               const Expanded(

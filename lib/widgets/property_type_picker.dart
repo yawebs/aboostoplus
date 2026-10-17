@@ -69,7 +69,7 @@ class PropertyTypeField extends StatelessWidget {
                             ? const LinearGradient(
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight,
-                                colors: [Color(0xFF6A3D7A), Color(0xFF3F224F)],
+                                colors: [Color(0xFFC45A06), Color(0xFF161616)],
                               )
                             : null,
                         color: chosen ? null : p.card,
@@ -78,7 +78,7 @@ class PropertyTypeField extends StatelessWidget {
                         chosen
                             ? propertyTypeIcon(value!)
                             : Icons.category_outlined,
-                        color: chosen ? const Color(0xFFE8A93B) : p.textGrey,
+                        color: chosen ? const Color(0xFFF7821B) : p.textGrey,
                         size: 22,
                       ),
                     ),
@@ -252,7 +252,7 @@ class _TypeTile extends StatelessWidget {
                   top: 0,
                   right: 0,
                   child: Icon(Icons.check_circle_rounded,
-                      size: 18, color: Color(0xFFE8A93B)),
+                      size: 18, color: Color(0xFFF7821B)),
                 ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -272,7 +272,7 @@ class _TypeTile extends StatelessWidget {
                         child: Icon(propertyTypeIcon(type),
                             size: 24,
                             color:
-                                selected ? const Color(0xFFE8A93B) : p.accent),
+                                selected ? const Color(0xFFF7821B) : p.accent),
                       ),
                       if (beds != null)
                         Positioned(
@@ -283,7 +283,7 @@ class _TypeTile extends StatelessWidget {
                             height: 20,
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
-                              color: const Color(0xFFE8A93B),
+                              color: const Color(0xFFF7821B),
                               shape: BoxShape.circle,
                               border: Border.all(
                                   color: selected ? p.primaryFill : p.card,
@@ -293,7 +293,7 @@ class _TypeTile extends StatelessWidget {
                                 style: const TextStyle(
                                     fontSize: 10.5,
                                     fontWeight: FontWeight.w800,
-                                    color: Color(0xFF241428))),
+                                    color: Color(0xFF1a1a1a))),
                           ),
                         ),
                     ],

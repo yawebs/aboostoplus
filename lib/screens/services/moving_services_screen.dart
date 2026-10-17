@@ -140,13 +140,13 @@ class _Step extends StatelessWidget {
             width: 30,
             height: 30,
             decoration: const BoxDecoration(
-              color: Color(0xFFF5C76A),
+              color: Color(0xFFFDB813),
               shape: BoxShape.circle,
             ),
             child: Center(
               child: Text('$n',
                   style: const TextStyle(
-                      fontWeight: FontWeight.w800, color: Color(0xFF3F224F))),
+                      fontWeight: FontWeight.w800, color: Color(0xFF161616))),
             ),
           ),
           const SizedBox(height: 6),

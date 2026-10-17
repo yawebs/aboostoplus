@@ -1,5 +1,5 @@
 /* Legal & help pages (privacy, terms, delete account) */
-.legal-hero { position: relative; overflow: hidden; color: #fff; background: radial-gradient(60% 90% at 85% 0%, rgba(106, 61, 122, .8), transparent 70%), var(--deep); padding: clamp(56px, 8vw, 96px) 0 clamp(48px, 6vw, 72px); }
+.legal-hero { position: relative; overflow: hidden; color: #fff; background: radial-gradient(60% 90% at 85% 0%, rgba(196, 90, 6, .8), transparent 70%), var(--deep); padding: clamp(56px, 8vw, 96px) 0 clamp(48px, 6vw, 72px); }
 .legal-hero h1 { font-size: clamp(2.3rem, 5vw, 3.6rem); margin-bottom: .3em; }
 .legal-hero h1 em { color: var(--gold); }
 .legal-hero p { color: rgba(255, 255, 255, .78); max-width: 640px; margin: 0; }
@@ -30,7 +30,7 @@
 
 /* step cards on the delete-account page */
 .ways { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 1.2em 0 2em; }
-.way { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: 0 18px 40px -30px rgba(63, 34, 79, .4); }
+.way { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 26px; box-shadow: 0 18px 40px -30px rgba(22, 22, 22, .4); }
 .way h3 { margin-top: 0; font-family: var(--serif); font-size: 1.3rem; }
 .way .pill { display: inline-block; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: var(--gold); color: var(--plum); margin-bottom: 12px; }
 .way ol { padding-left: 1.2em; }

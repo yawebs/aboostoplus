@@ -20,7 +20,7 @@ class ServiceApartmentCard extends StatelessWidget {
   // Kept for callers that size cards themselves.
   static const double width = 270;
 
-  static const _gold = Color(0xFFE8A93B);
+  static const _gold = Color(0xFFF7821B);
 
   @override
   Widget build(BuildContext context) {

@@ -32,12 +32,12 @@ $self = htmlspecialchars("unsubscribe.php?u=$userId&s=" . rawurlencode($sig), EN
 <title>Unsubscribe · Aboostoplus</title>
 <meta name="robots" content="noindex">
 <style>
-body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;font-family:Segoe UI,Roboto,Arial,sans-serif;background:#f4f1f7;color:#1d1424}
-.card{max-width:440px;background:#fff;border-radius:20px;padding:36px 32px;text-align:center;box-shadow:0 8px 30px rgba(63,34,79,.12)}
-h1{font-family:Georgia,serif;color:#3F224F;font-size:26px;margin:0 0 10px}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;font-family:Segoe UI,Roboto,Arial,sans-serif;background:#f4f1f7;color:#161616}
+.card{max-width:440px;background:#fff;border-radius:20px;padding:36px 32px;text-align:center;box-shadow:0 8px 30px rgba(22, 22, 22,.12)}
+h1{font-family:Georgia,serif;color:#161616;font-size:26px;margin:0 0 10px}
 p{color:#5a4f62;line-height:1.6;margin:0 0 22px}
-button{background:#3F224F;color:#fff;border:0;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:700;cursor:pointer}
-a{color:#6A3D7A}
+button{background:#161616;color:#fff;border:0;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:700;cursor:pointer}
+a{color:#C45A06}
 </style></head>
 <body><div class="card">
 <?php if (!$valid): ?>

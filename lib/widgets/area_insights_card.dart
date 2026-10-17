@@ -150,7 +150,7 @@ class _AreaInsightsCardState extends State<AreaInsightsCard> {
           decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
               palette.primaryFill,
-              const Color(0xFFE8A93B),
+              const Color(0xFFF7821B),
             ]),
             borderRadius: BorderRadius.circular(12),
           ),
@@ -339,7 +339,7 @@ class _AreaInsightsCardState extends State<AreaInsightsCard> {
           if (watchOut.isNotEmpty) ...[
             const SizedBox(height: 14),
             _bulletGroup(palette, 'Watch out for', watchOut,
-                Icons.warning_amber_rounded, const Color(0xFFE8A93B)),
+                Icons.warning_amber_rounded, const Color(0xFFF7821B)),
           ],
           if (tips.isNotEmpty) ...[
             const SizedBox(height: 14),
@@ -395,7 +395,7 @@ class _AreaInsightsCardState extends State<AreaInsightsCard> {
 
   Color _scoreColor(int score) {
     if (score >= 4) return const Color(0xFF2E9E5B);
-    if (score == 3) return const Color(0xFFE8A93B);
+    if (score == 3) return const Color(0xFFF7821B);
     return const Color(0xFFD64545);
   }
 

@@ -129,7 +129,7 @@ class _SearchAlertsScreenState extends State<SearchAlertsScreen> {
   }
 
   Widget _tile(AppPalette palette, SearchAlert a) {
-    const gold = Color(0xFFE8A93B);
+    const gold = Color(0xFFF7821B);
     return Dismissible(
       key: ValueKey(a.id),
       direction: DismissDirection.endToStart,
@@ -217,7 +217,7 @@ class _SearchAlertsScreenState extends State<SearchAlertsScreen> {
   }
 
   Widget _empty(AppPalette palette) {
-    const gold = Color(0xFFE8A93B);
+    const gold = Color(0xFFF7821B);
     return Padding(
       padding: const EdgeInsets.fromLTRB(36, 80, 36, 0),
       child: Column(

@@ -24,9 +24,9 @@ class AgentVerificationScreen extends StatefulWidget {
       _AgentVerificationScreenState();
 }
 
-const _plum = Color(0xFF3F224F);
-const _purple = Color(0xFF6A3D7A);
-const _gold = Color(0xFFF5C76A);
+const _ink = Color(0xFF161616);
+const _ember = Color(0xFFC45A06);
+const _gold = Color(0xFFFDB813);
 const _green = Color(0xFF2E9E5B);
 const _red = Color(0xFFD64545);
 
@@ -124,7 +124,7 @@ class _Hero extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [_purple, _plum, Color(0xFF26122F)],
+          colors: [_ember, _ink, Color(0xFF26122F)],
         ),
         borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)),
       ),
@@ -330,7 +330,7 @@ class _IntroView extends StatelessWidget {
                           ),
                           _Benefit(
                             icon: Icons.workspace_premium_rounded,
-                            color: Color(0xFFE8A93B),
+                            color: Color(0xFFF7821B),
                             title: 'Free, takes 3 minutes',
                             text:
                                 'Reviewed by the Aboostoplus team, usually within 24-48 hours.',
@@ -649,7 +649,7 @@ class _TimelineStep extends StatelessWidget {
     final color = state == _StepState.done
         ? _green
         : state == _StepState.current
-            ? const Color(0xFFE8A93B)
+            ? const Color(0xFFF7821B)
             : palette.border;
     return IntrinsicHeight(
       child: Row(
@@ -796,7 +796,7 @@ class _VerifiedView extends StatelessWidget {
                 ),
                 const _Benefit(
                   icon: Icons.chat_bubble_rounded,
-                  color: Color(0xFFE8A93B),
+                  color: Color(0xFFF7821B),
                   title: 'Chats',
                   text: 'House hunters see the tick when they message you.',
                   last: true,

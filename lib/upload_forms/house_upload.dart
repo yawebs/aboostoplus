@@ -912,7 +912,7 @@ class _HouseUploadScreenState extends State<HouseUploadScreen> {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Color(0xFF6A3D7A), Color(0xFF3F224F), Color(0xFF1B1020)],
+            colors: [Color(0xFFC45A06), Color(0xFF161616), Color(0xFF0A0A0A)],
             stops: [0.0, 0.55, 1.0],
           ),
         ),
@@ -930,7 +930,7 @@ class _HouseUploadScreenState extends State<HouseUploadScreen> {
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
-                    colors: [Color(0x4DE8A93B), Colors.transparent],
+                    colors: [Color(0x4DF7821B), Colors.transparent],
                   ),
                 ),
               ),
@@ -964,7 +964,7 @@ class _HouseUploadScreenState extends State<HouseUploadScreen> {
                       Text(
                         'PROPERTIES',
                         style: TextStyle(
-                          color: Color(0xFFE8A93B),
+                          color: Color(0xFFF7821B),
                           fontSize: 11,
                           fontWeight: FontWeight.w700,
                           letterSpacing: 1.3,
@@ -1016,18 +1016,18 @@ class _HouseUploadScreenState extends State<HouseUploadScreen> {
             width: 42,
             height: 42,
             decoration: BoxDecoration(
-              color: const Color(0xFFE8A93B),
+              color: const Color(0xFFF7821B),
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFFE8A93B).withOpacity(0.4),
+                  color: const Color(0xFFF7821B).withOpacity(0.4),
                   blurRadius: 14,
                   offset: const Offset(0, 4),
                 ),
               ],
             ),
             child: const Icon(Icons.villa_rounded,
-                color: Color(0xFF241428), size: 20),
+                color: Color(0xFF1a1a1a), size: 20),
           ),
           Positioned(
             top: -4,
@@ -1036,12 +1036,12 @@ class _HouseUploadScreenState extends State<HouseUploadScreen> {
               width: 16,
               height: 16,
               decoration: BoxDecoration(
-                color: const Color(0xFF1B1020),
+                color: const Color(0xFF0A0A0A),
                 shape: BoxShape.circle,
                 border: Border.all(color: Colors.white.withOpacity(0.2)),
               ),
               child: const Icon(Icons.auto_awesome_rounded,
-                  color: Color(0xFFE8A93B), size: 10),
+                  color: Color(0xFFF7821B), size: 10),
             ),
           ),
         ],

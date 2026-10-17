@@ -127,17 +127,17 @@ function mailAdminMessage(string $firstName, string $subject, string $message, s
     $paras   = preg_split('/\R{2,}/', trim($message));
     $body    = '';
     foreach ($paras as $para) {
-        $body .= '<p style="margin:0 0 16px;font-size:15px;line-height:1.65;color:#4a3f52">' . nl2br(htmlspecialchars($para, ENT_QUOTES)) . '</p>';
+        $body .= '<p style="margin:0 0 16px;font-size:15px;line-height:1.65;color:#4a4540">' . nl2br(htmlspecialchars($para, ENT_QUOTES)) . '</p>';
     }
     if ($ctaLabel !== '' && $ctaUrl !== '') {
         $u = htmlspecialchars($ctaUrl, ENT_QUOTES);
         $l = htmlspecialchars($ctaLabel, ENT_QUOTES);
-        $body .= '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 4px"><tr><td style="border-radius:12px;background:#3F224F">'
+        $body .= '<table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 4px"><tr><td style="border-radius:12px;background:#161616">'
                . "<a href=\"$u\" style=\"display:inline-block;padding:14px 26px;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;border-radius:12px\">$l</a>"
                . '</td></tr></table>';
     }
     $footer = $unsubscribeUrl !== ''
-        ? 'You’re receiving this because you have a Aboostoplus account. <a href="' . htmlspecialchars($unsubscribeUrl, ENT_QUOTES) . '" style="color:#6A3D7A">Unsubscribe</a>'
+        ? 'You’re receiving this because you have a Aboostoplus account. <a href="' . htmlspecialchars($unsubscribeUrl, ENT_QUOTES) . '" style="color:#C45A06">Unsubscribe</a>'
         : '';
     $subjectP = str_replace(['{{first_name}}', '{{ first_name }}'], $first, $subject);
     $html = mailLayout(mb_substr(preg_replace('/\s+/', ' ', $message), 0, 120), $subjectP, $body, $footer);
@@ -157,22 +157,22 @@ function mailLayout(string $preheader, string $title, string $bodyHtml, string $
     return <<<HTML
 <!doctype html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>$ttl</title></head>
-<body style="margin:0;padding:0;background:#f4f1f7;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1d1424">
+<body style="margin:0;padding:0;background:#f4f1f7;font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#161616">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0">$pre</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f1f7;padding:32px 12px">
 <tr><td align="center">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px rgba(63,34,79,.10)">
-    <tr><td style="background:#3F224F;background:linear-gradient(135deg,#3F224F,#6A3D7A);padding:28px 32px">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px rgba(22, 22, 22,.10)">
+    <tr><td style="background:#161616;background:linear-gradient(135deg,#161616,#C45A06);padding:28px 32px">
       <div style="font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:700;color:#ffffff;letter-spacing:.3px">Aboostoplus</div>
-      <div style="font-size:13px;color:#F5C76A;margin-top:4px;letter-spacing:.4px">Find a home. Know the area. Move in with ease.</div>
+      <div style="font-size:13px;color:#FDB813;margin-top:4px;letter-spacing:.4px">Find a home. Know the area. Move in with ease.</div>
     </td></tr>
     <tr><td style="padding:32px">
-      <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:24px;line-height:1.25;color:#3F224F">$ttl</h1>
+      <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:24px;line-height:1.25;color:#161616">$ttl</h1>
       $bodyHtml
     </td></tr>
     <tr><td style="padding:20px 32px;background:#faf8fc;border-top:1px solid #eee7f2;font-size:12px;line-height:1.6;color:#8a7f92">
       $footerHtml<br>
-      &copy; $year Aboostoplus &middot; <a href="https://aboostoplus.com" style="color:#6A3D7A;text-decoration:none">aboostoplus.com</a>
+      &copy; $year Aboostoplus &middot; <a href="https://aboostoplus.com" style="color:#C45A06;text-decoration:none">aboostoplus.com</a>
     </td></tr>
   </table>
 </td></tr>
@@ -189,11 +189,11 @@ function mailPasswordResetCode(string $firstName, string $code, int $minutes): a
         "Your Aboostoplus reset code is $code",
         'Reset your password',
         <<<HTML
-<p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#4a3f52">Hi $name, use this code in the Aboostoplus app to reset your password.</p>
+<p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#4a4540">Hi $name, use this code in the Aboostoplus app to reset your password.</p>
 <div style="background:#faf6fc;border:1px solid #eadff0;border-radius:16px;padding:22px;text-align:center;margin:0 0 20px">
   <div style="font-size:12px;letter-spacing:2px;color:#8a7f92;margin-bottom:8px">YOUR CODE</div>
-  <div style="font-family:Consolas,Menlo,monospace;font-size:36px;font-weight:700;letter-spacing:8px;color:#3F224F">$spaced</div>
-  <div style="font-size:13px;color:#E8A93B;font-weight:600;margin-top:10px">Expires in $minutes minutes</div>
+  <div style="font-family:Consolas,Menlo,monospace;font-size:36px;font-weight:700;letter-spacing:8px;color:#161616">$spaced</div>
+  <div style="font-size:13px;color:#F7821B;font-weight:600;margin-top:10px">Expires in $minutes minutes</div>
 </div>
 <p style="margin:0;font-size:13px;line-height:1.6;color:#8a7f92">Didn't ask to reset your password? You can safely ignore this email. Your password stays the same, and never share this code with anyone, including Aboostoplus staff or agents.</p>
 HTML
@@ -211,10 +211,10 @@ function mailPasswordChanged(string $firstName): array
         'Your Aboostoplus password was changed',
         'Your password was changed',
         <<<HTML
-<p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:#4a3f52">Hi $name, the password for your Aboostoplus account was changed on <b>$when</b> (server time). For your security, you've been signed out on all devices.</p>
+<p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:#4a4540">Hi $name, the password for your Aboostoplus account was changed on <b>$when</b> (server time). For your security, you've been signed out on all devices.</p>
 <div style="background:#fdf6e8;border:1px solid #f3dfb5;border-radius:14px;padding:16px 18px;font-size:14px;line-height:1.6;color:#6b4e12">
   <b>Wasn't you?</b> Reset your password again from the app straight away and contact
-  <a href="mailto:support@aboostoplus.com" style="color:#6A3D7A">support@aboostoplus.com</a>.
+  <a href="mailto:support@aboostoplus.com" style="color:#C45A06">support@aboostoplus.com</a>.
 </div>
 HTML
     );

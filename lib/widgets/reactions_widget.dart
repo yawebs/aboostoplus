@@ -397,7 +397,7 @@ class _ReactionsWidgetState extends State<ReactionsWidget> {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 16, vertical: 11),
                           decoration: BoxDecoration(
-                            color: const Color(0xFFE8A93B),
+                            color: const Color(0xFFF7821B),
                             borderRadius: appRadius(24.0),
                           ),
                           child: Row(
@@ -408,14 +408,14 @@ class _ReactionsWidgetState extends State<ReactionsWidget> {
                                 style: TextStyle(
                                   fontSize: 13,
                                   fontWeight: FontWeight.w700,
-                                  color: const Color(0xFF241428),
+                                  color: const Color(0xFF1a1a1a),
                                 ),
                               ),
                               const SizedBox(width: 6),
                               Icon(
                                 Icons.arrow_forward_ios,
                                 size: 12,
-                                color: const Color(0xFF241428),
+                                color: const Color(0xFF1a1a1a),
                               ),
                             ],
                           ),

@@ -91,7 +91,7 @@ class _EasyAccessWidgetState extends State<EasyAccessWidget> {
       padding:
           EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
       decoration: BoxDecoration(
-          color: HexColor('#E6E6FA'),
+          color: HexColor('#FAF6F1'),
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(10),
             topRight: Radius.circular(10.0),

@@ -752,7 +752,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final palette = context.palette;
     final hasFetched = context.read<DataProvider>().hasFetchedServiceApartments;
     final deep = Color.lerp(palette.primaryFill, Colors.black, 0.55)!;
-    const gold = Color(0xFFF5C76A);
+    const gold = Color(0xFFFDB813);
 
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 4),
@@ -1643,7 +1643,7 @@ class _NightSkyPainter extends CustomPainter {
       Offset(size.width * 0.95, 0),
       90,
       Paint()
-        ..color = const Color(0xFFF5C76A).withValues(alpha: 0.10)
+        ..color = const Color(0xFFFDB813).withValues(alpha: 0.10)
         ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 40),
     );
   }
@@ -1697,7 +1697,7 @@ class _IconBtn extends StatelessWidget {
 }
 
 // The light/dark switch in the home app bar: a compact pill with a
-// purple-to-gold track and a sliding knob (moon on the left in light mode,
+// black-to-orange track and a sliding knob (moon on the left in light mode,
 // sun on the right in dark mode). A real switch shape, so it reads as a
 // control rather than another round icon button.
 class _ThemeToggleBtn extends StatelessWidget {
@@ -1706,8 +1706,8 @@ class _ThemeToggleBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    const purple = Color(0xFF6A3D7A);
-    const gold = Color(0xFFE8A93B);
+    const purple = Color(0xFFC45A06);
+    const gold = Color(0xFFF7821B);
     const duration = Duration(milliseconds: 280);
     return Container(
       width: 58,

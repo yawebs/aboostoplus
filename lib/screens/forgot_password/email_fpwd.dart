@@ -21,10 +21,10 @@ class ForgetPasswordEmail extends StatefulWidget {
 
 enum _Step { email, code, password, done }
 
-const _plum = Color(0xFF3F224F);
-const _plum2 = Color(0xFF6A3D7A);
-const _gold = Color(0xFFF5C76A);
-const _amber = Color(0xFFE8A93B);
+const _ink = Color(0xFF161616);
+const _ember = Color(0xFFC45A06);
+const _gold = Color(0xFFFDB813);
+const _amber = Color(0xFFF7821B);
 const _red = Color(0xFFE5484D);
 const _green = Color(0xFF2E9E5B);
 const _codeLength = 6;
@@ -557,7 +557,7 @@ class _ForgetPasswordEmailState extends State<ForgetPasswordEmail> {
                     offset: const Offset(0, 12)),
               ],
             ),
-            child: const Icon(Icons.check_rounded, size: 56, color: _plum),
+            child: const Icon(Icons.check_rounded, size: 56, color: _ink),
           ),
         ),
         const SizedBox(height: 26),
@@ -705,7 +705,7 @@ class _Hero extends StatelessWidget {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [_plum, _plum2],
+          colors: [_ink, _ember],
         ),
         borderRadius: wide
             ? null
@@ -1005,10 +1005,10 @@ class _GradientButton extends StatelessWidget {
         height: 56,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
-          gradient: const LinearGradient(colors: [_plum2, _plum]),
+          gradient: const LinearGradient(colors: [_ember, _ink]),
           boxShadow: [
             BoxShadow(
-                color: _plum.withValues(alpha: .35),
+                color: _ink.withValues(alpha: .35),
                 blurRadius: 18,
                 offset: const Offset(0, 8)),
           ],

@@ -374,13 +374,13 @@ class _EditProfileState extends State<EditProfile> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             gradient: const LinearGradient(colors: [
-                              Color(0xFFF5C76A),
-                              Color(0xFFE8A93B),
+                              Color(0xFFFDB813),
+                              Color(0xFFF7821B),
                             ]),
                             border: Border.all(color: palette.page, width: 3),
                           ),
                           child: const Icon(Icons.photo_camera_rounded,
-                              size: 18, color: Color(0xFF3F224F)),
+                              size: 18, color: Color(0xFF161616)),
                         ),
                       ),
                     ],

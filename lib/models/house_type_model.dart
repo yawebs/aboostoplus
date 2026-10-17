@@ -108,17 +108,17 @@ class HomeServiceInfo {
 
 const Map<String, HomeServiceInfo> homeServiceInfo = {
   'Moving & Haulage': HomeServiceInfo(Icons.local_shipping_rounded,
-      'Trucks, packers and loaders', Color(0xFF6A3D7A)),
+      'Trucks, packers and loaders', Color(0xFFC45A06)),
   'Cleaning': HomeServiceInfo(Icons.cleaning_services_rounded,
       'Move-in & deep cleaning', Color(0xFF2E9E8F)),
   'Painting': HomeServiceInfo(Icons.format_paint_rounded,
       'Fresh walls before you move in', Color(0xFFD9578A)),
   'Power & Solar': HomeServiceInfo(Icons.solar_power_rounded,
-      'Inverters, solar & generators', Color(0xFFE8A93B)),
+      'Inverters, solar & generators', Color(0xFFF7821B)),
   'Plumbing': HomeServiceInfo(
       Icons.plumbing_rounded, 'Leaks, taps & water tanks', Color(0xFF3A86E0)),
   'Electrical': HomeServiceInfo(Icons.electrical_services_rounded,
-      'Wiring, sockets & meters', Color(0xFFC98E23)),
+      'Wiring, sockets & meters', Color(0xFFD96A0B)),
   'Fumigation': HomeServiceInfo(Icons.pest_control_rounded,
       'Pest control before you move', Color(0xFF2E9E5B)),
 };

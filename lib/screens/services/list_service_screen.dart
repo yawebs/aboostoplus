@@ -229,7 +229,7 @@ class _ListServiceScreenState extends State<ListServiceScreen> {
       ),
       child: Row(
         children: [
-          const Icon(Icons.handyman_rounded, color: Color(0xFFF5C76A), size: 34),
+          const Icon(Icons.handyman_rounded, color: Color(0xFFFDB813), size: 34),
           const SizedBox(width: 14),
           Expanded(
             child: Column(

@@ -35,7 +35,7 @@ enum _Pending { none, complete, cancel, reschedule }
 class _ChangeStatusWidgetState extends State<ChangeStatusWidget> {
   static const _green = Color(0xFF2E9E5B);
   static const _red = Color(0xFFD64545);
-  static const _amber = Color(0xFFE8A93B);
+  static const _amber = Color(0xFFF7821B);
 
   DateTime? _dateTime;
   bool _isLoading = false;

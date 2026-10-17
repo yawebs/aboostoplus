@@ -289,7 +289,7 @@ class _UserDashboardState extends State<UserDashboard> {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF6A3D7A), Color(0xFF3F224F), Color(0xFF1B1020)],
+          colors: [Color(0xFFC45A06), Color(0xFF161616), Color(0xFF0A0A0A)],
           stops: [0.0, 0.52, 1.0],
         ),
       ),
@@ -304,7 +304,7 @@ class _UserDashboardState extends State<UserDashboard> {
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 gradient: RadialGradient(
-                  colors: [Color(0x4DE8A93B), Colors.transparent],
+                  colors: [Color(0x4DF7821B), Colors.transparent],
                 ),
               ),
             ),
@@ -381,7 +381,7 @@ class _UserDashboardState extends State<UserDashboard> {
                       fontSize: 11,
                       fontWeight: FontWeight.w700,
                       letterSpacing: 1.4,
-                      color: Color(0xFFE8A93B)),
+                      color: Color(0xFFF7821B)),
                 ),
                 const SizedBox(height: 6),
                 Text(
@@ -464,7 +464,7 @@ class _UserDashboardState extends State<UserDashboard> {
             child: _bentoCard(
               icon: Icons.card_giftcard_outlined,
               iconBg: AppColors.secondary.withOpacity(0.14),
-              iconColor: const Color(0xFFC98E23),
+              iconColor: const Color(0xFFD96A0B),
               value: '₦${NumberFormat().format(0.0)}',
               label: 'Bonus',
               bg: context.palette.card,
@@ -543,8 +543,8 @@ class _UserDashboardState extends State<UserDashboard> {
           _actionCircle(
               Icons.travel_explore_rounded,
               'Explore area',
-              const Color(0xFF8E5BD8),
-              const Color(0xFF8E5BD8).withOpacity(0.12),
+              const Color(0xFFF7821B),
+              const Color(0xFFF7821B).withOpacity(0.12),
               () => goTo(context, const ExploreAreaScreen(), false)),
           _actionCircle(
               Icons.favorite_rounded,
@@ -555,14 +555,14 @@ class _UserDashboardState extends State<UserDashboard> {
           _actionCircle(
               Icons.notifications_active_rounded,
               'Search alerts',
-              const Color(0xFFC98E23),
+              const Color(0xFFD96A0B),
               AppColors.secondary.withOpacity(0.14),
               () => goTo(context, const SearchAlertsScreen(), false)),
           _actionCircle(
               Icons.local_shipping_rounded,
               'Moving services',
-              const Color(0xFF6A3D7A),
-              const Color(0xFF6A3D7A).withOpacity(0.12),
+              const Color(0xFFC45A06),
+              const Color(0xFFC45A06).withOpacity(0.12),
               () => goTo(context, const MovingServicesScreen(), false)),
           _actionCircle(
               Icons.account_balance_outlined,
@@ -845,7 +845,7 @@ class _SparklinePainter extends CustomPainter {
         size.height * 0.26,
       );
     final paint = Paint()
-      ..color = const Color(0xFFE8A93B).withOpacity(0.85)
+      ..color = const Color(0xFFF7821B).withOpacity(0.85)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2
       ..strokeCap = StrokeCap.round;

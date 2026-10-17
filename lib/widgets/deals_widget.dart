@@ -162,7 +162,7 @@ class _DealsWidgetState extends State<DealsWidget> {
         final when = _when;
         final overdue = when != null && when.isBefore(DateTime.now());
         return overdue
-            ? _StatusStyle(const Color(0xFFE8A93B),
+            ? _StatusStyle(const Color(0xFFF7821B),
                 Icons.pending_actions_rounded, 'Awaiting update')
             : _StatusStyle(context.palette.accent,
                 Icons.event_available_rounded, 'Upcoming');

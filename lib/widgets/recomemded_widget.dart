@@ -401,7 +401,7 @@ class _PropertyGalleryState extends State<_PropertyGallery> {
           Row(
             children: [
               const Icon(Icons.location_on_rounded,
-                  size: 14, color: Color(0xFFE8A93B)),
+                  size: 14, color: Color(0xFFF7821B)),
               const SizedBox(width: 3),
               Flexible(
                 child: Text(
@@ -436,7 +436,7 @@ class _PropertyGalleryState extends State<_PropertyGallery> {
                 style: const TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.w600,
-                  color: Color(0xFFE8A93B),
+                  color: Color(0xFFF7821B),
                 ),
               ),
           ]),
@@ -482,7 +482,7 @@ class _PropertyGalleryState extends State<_PropertyGallery> {
             width: on ? 16 : 6,
             height: 6,
             decoration: BoxDecoration(
-              color: on ? const Color(0xFFE8A93B) : const Color(0x8CFFFFFF),
+              color: on ? const Color(0xFFF7821B) : const Color(0x8CFFFFFF),
               borderRadius: BorderRadius.circular(3),
             ),
           );

@@ -31,7 +31,7 @@ class AppDrawer extends StatefulWidget {
 }
 
 class _AppDrawerState extends State<AppDrawer> {
-  static const _gold = Color(0xFFF5C76A);
+  static const _gold = Color(0xFFFDB813);
   String _version = '';
 
   @override
@@ -72,7 +72,7 @@ class _AppDrawerState extends State<AppDrawer> {
                 _tile(
                   palette,
                   icon: Icons.travel_explore_rounded,
-                  color: const Color(0xFF8E5BD8),
+                  color: const Color(0xFFF7821B),
                   title: 'Explore an area',
                   subtitle: 'AI briefing on any neighbourhood',
                   badge: 'AI',
@@ -90,7 +90,7 @@ class _AppDrawerState extends State<AppDrawer> {
                 _tile(
                   palette,
                   icon: Icons.notifications_active_rounded,
-                  color: const Color(0xFFE8A93B),
+                  color: const Color(0xFFF7821B),
                   title: 'Search alerts',
                   subtitle: 'Get notified about new matches',
                   onTap: () => _open(const SearchAlertsScreen()),
@@ -98,7 +98,7 @@ class _AppDrawerState extends State<AppDrawer> {
                 _tile(
                   palette,
                   icon: Icons.local_shipping_rounded,
-                  color: const Color(0xFF6A3D7A),
+                  color: const Color(0xFFC45A06),
                   title: 'Moving & home services',
                   subtitle: 'Movers, cleaners, power & more',
                   onTap: () => _open(const MovingServicesScreen()),
@@ -188,13 +188,13 @@ class _AppDrawerState extends State<AppDrawer> {
                 children: [
                   Row(
                     children: [
-                      // Avatar with a gold ring
+                      // Avatar with an orange ring
                       Container(
                         padding: const EdgeInsets.all(3),
                         decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                           gradient: LinearGradient(
-                              colors: [_gold, Color(0xFFE8A93B)]),
+                              colors: [_gold, Color(0xFFF7821B)]),
                         ),
                         child: CircleAvatar(
                           radius: 31,
@@ -547,7 +547,7 @@ class _StarsPainter extends CustomPainter {
       Offset(size.width * 1.05, size.height * 0.05),
       110,
       Paint()
-        ..color = const Color(0xFFF5C76A).withValues(alpha: 0.12)
+        ..color = const Color(0xFFFDB813).withValues(alpha: 0.12)
         ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 50),
     );
   }

@@ -254,7 +254,7 @@ class _ViewPhotoWidgetState extends State<ViewPhotoWidget> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 border: active
-                    ? Border.all(color: const Color(0xFFE8A93B), width: 2)
+                    ? Border.all(color: const Color(0xFFF7821B), width: 2)
                     : null,
               ),
               child: ClipRRect(

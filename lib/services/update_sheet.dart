@@ -1,7 +1,7 @@
 part of 'update_checker.dart';
 
 // ---------------------------------------------------------------------------
-// Update popup UI: animated purple hero with the app icon, old -> new
+// Update popup UI: animated dark hero with the app icon, old -> new
 // version chips, "what's new" feature cards and a shimmering CTA.
 // ---------------------------------------------------------------------------
 
@@ -29,8 +29,8 @@ class _UpdateSheet extends StatefulWidget {
 
 class _UpdateSheetState extends State<_UpdateSheet>
     with TickerProviderStateMixin {
-  static const _gold = Color(0xFFF5C76A);
-  static const _goldDeep = Color(0xFFE8A93B);
+  static const _gold = Color(0xFFFDB813);
+  static const _goldDeep = Color(0xFFF7821B);
 
   // Looping: icon glow pulse, sparkle twinkle, arrow nudge, button shimmer.
   late final AnimationController _loop = AnimationController(
@@ -176,8 +176,8 @@ class _UpdateSheetState extends State<_UpdateSheet>
     );
   }
 
-  // Purple gradient stage: rings, twinkling sparkles, and the app icon with
-  // a pulsing glow and a gold "NEW" badge.
+  // Dark gradient stage: rings, twinkling sparkles, and the app icon with
+  // a pulsing glow and an orange "NEW" badge.
   Widget _hero(AppPalette palette) {
     final deep = Color.lerp(palette.primaryFill, Colors.black, 0.45)!;
     return SizedBox(
@@ -416,7 +416,7 @@ class _UpdateSheetState extends State<_UpdateSheet>
   _NoteStyle _noteStyle(AppPalette palette, String note, int index) {
     final n = note.toLowerCase();
     if (n.contains(' ai') || n.startsWith('ai') || n.contains('insight')) {
-      return const _NoteStyle(Icons.auto_awesome_rounded, Color(0xFF8E5BD8));
+      return const _NoteStyle(Icons.auto_awesome_rounded, Color(0xFFF7821B));
     }
     if (n.contains('chat') || n.contains('message')) {
       return const _NoteStyle(Icons.forum_rounded, Color(0xFF3A86E0));
